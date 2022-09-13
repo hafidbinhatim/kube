@@ -48,8 +48,8 @@ for table in list_table:
         to_s3(snow_credential=snow_credential, df=df, temp_schema_name=temp_schema, table_name=temp_table,
               unload_path=f's3://evm-etl/prod/TEMP_{table[0]}_{table[1]}.parquet',
               load_path=f'@s3_etl/prod/TEMP_{table[0]}_{table[1]}.parquet/')
-        upsert(snow_credential=snow_credential, schema_name=table[0], temp_schema_name=temp_schema,
-               table_name=table[1], temp_table_name=temp_table, left_id=table[2], right_id=table[2])
+#         upsert(snow_credential=snow_credential, schema_name=table[0], temp_schema_name=temp_schema,
+#                table_name=table[1], temp_table_name=temp_table, left_id=table[2], right_id=table[2])
     except Exception as e:
         print("Data extract error: " + str(e))
 
