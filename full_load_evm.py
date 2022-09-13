@@ -16,14 +16,14 @@ snow_credential = {
 
 list_table = [
     ['COM', 'LOCALITY_PROVINCE'],
-    ['COM', 'LOCALITY_DISTRICT'],
-    ['COM', 'LOCALITY_SUBDISTRICT'],
-    ['DIGITAL_PRODUCT', 'PRODUCT_CATEGORY_V2'],
-    ['EVM', 'BRAND_MUTATION_TYPE'],
-    ['ORDER', 'ORDER_DIGITAL'],
-    ['PAYMENT', 'PROVIDERS_PAYMENT_METHOD'],
-    ['PAYMENT', 'PAYMENT_METHOD'],
-    ['PAYMENT', 'PROVIDER'],
+#     ['COM', 'LOCALITY_DISTRICT'],
+#     ['COM', 'LOCALITY_SUBDISTRICT'],
+#     ['DIGITAL_PRODUCT', 'PRODUCT_CATEGORY_V2'],
+#     ['EVM', 'BRAND_MUTATION_TYPE'],
+#     ['ORDER', 'ORDER_DIGITAL'],
+#     ['PAYMENT', 'PROVIDERS_PAYMENT_METHOD'],
+#     ['PAYMENT', 'PAYMENT_METHOD'],
+#     ['PAYMENT', 'PROVIDER'],
 ]
 
 for table in list_table:
