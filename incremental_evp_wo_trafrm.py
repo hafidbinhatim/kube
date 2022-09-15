@@ -19,7 +19,7 @@ snow_credential = {
 list = os.environ.get("list_table")
 list_table = ast.literal_eval(list)
 
-ds = argv[0]
+ds = argv[1]
 
 for table in list_table:
     source_credential = {
