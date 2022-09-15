@@ -27,7 +27,7 @@ for table in list_table:
         'host': os.environ['host'],
         'user': os.environ['user'],
         'password': os.environ['password'],
-        'database': os.environ['database'],
+        'database': table[0].lower(),
         'port': os.environ['port'],
         'additional': 'sslmode=require'
     }
