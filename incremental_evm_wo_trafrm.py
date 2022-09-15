@@ -1,6 +1,7 @@
 import time
 import os
 import ast
+from sys import argv
 from utils.snowball import upsert, to_s3, extract_mysql, get_column_mysql
 
 start = time.time()
@@ -28,7 +29,7 @@ snow_credential = {
 list = os.environ.get("list_table")
 list_table = ast.literal_eval(list)
 
-ds = os.environ['ds']
+ds = argv[1]
 
 for table in list_table:
     date_column = table[3]
